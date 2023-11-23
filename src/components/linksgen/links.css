@@ -1,0 +1,53 @@
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: aliceblue;
+  box-shadow: 3px 3px 6px #bcb8b8;
+  border-radius: 8px;
+  padding: 1rem 0.3rem;
+  margin: 1rem 0.3rem;
+  height: 280px;
+}
+
+.linkTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #262161;
+  text-align: center;
+}
+
+.linksTotal {
+  box-shadow: 2px 2px 3px grey;
+  /* background-color: #c5c5c5; */
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  width: 88%;
+  margin-bottom: 1rem;
+}
+
+.linksTotal h4,
+.linksPercent h4 {
+  font-size: 0.7rem;
+  font-weight: 500;
+
+  color: #262161;
+}
+
+.linksTotal h5,
+.linksPercent h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ee4037;
+}
+
+.linksPercent {
+  background-color: #c2bfea;
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  width: 88%;
+}

@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e1e1;
+  scroll-behavior: smooth;
+}
+
+.table_cont {
+  overflow-x: auto;
+}
+.leeds_title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.orange_sp {
+  color: #ff6b62;
+}
+.purple_sp {
+  color: #5852af;
+}
+
+.leeds_drd {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+}
+.leeds_cat a {
+  color: #fff;
+  background-color: #ff6b62;
+}
+.leeds_drd.leeds_us a {
+  color: #ff6b62;
+  background-color: #fff;
+}
+
+.leeds_cat {
+  color: #fff;
+  background-color: #ff6b62;
+  padding: 0 0.7rem;
+  border: 1px solid #ff6b62;
+  border-radius: 12px;
+}
+
+.leeds_us {
+  color: #ff6b62;
+  background-color: #fff;
+  padding: 0 0.7rem;
+  border: 1px solid #ff6b62;
+  border-radius: 12px;
+}
+
+.accent_btn {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff6b62;
+  padding: 0.7rem;
+  border: 1px solid #ff6b62;
+  border-radius: 12px;
+  margin: 0 0.5rem;
+  box-shadow: 1px 1px 4px rgb(30, 30, 30);
+  transition: all.2s ease-in-out;
+}
+.accent_btn:hover,
+.pay_fltr_btn:hover {
+  background-color: #160f66;
+  color: #ee4037;
+}
+.leeds_head {
+  background-color: #5852af;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0 0 33px 0;
+}
+.leeds_con {
+  background-color: #5852af;
+}
+.label_div {
+  display: flex;
+  gap: 2.2rem;
+  color: #fff;
+  margin: 0;
+}
+.label_div p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.leeds_form input {
+  width: 50%;
+  background: #ffa695;
+  color: #fff;
+  border: 2px solid #ff6b62;
+  height: 2.3rem;
+}
+
+.leed_sr_btn {
+  background-color: #ff6b62;
+  padding: 1rem 0.6rem;
+  color: #fff;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns_div {
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+}
+
+.btns_div a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  background-color: #ff6b62;
+  color: #fff;
+  margin: 0 0.3rem;
+  border-radius: 7px;
+  border: 1px solid #ff6b62;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.btns_div a :has(:active) {
+  color: #ff6b62;
+  background-color: #fff;
+}
+td.leeds_name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ff6b62;
+}
+td.leeds_email {
+  font-size: 0.8rem;
+}
+
+td.leeds_tel {
+  font-size: 1rem;
+  color: #ff6b62;
+}
+td.leeds_date,
+.leeds_type {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+td.leeds_cust {
+  color: #ff6b62;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.dt_fltr_wrp {
+  display: flex;
+  align-items: baseline;
+}
+.dt_fltr input {
+  color: #fff;
+  background-color: #ff6b62;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid #ff6b62;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
+.leeds_table {
+  overflow-x: auto;
+}
+
+.leeds_table tbody tr:nth-child(odd) {
+  background: #ffdcda;
+}
+
+.pagination.leeds_pagin {
+  --bs-pagination-padding-x: 0.75rem;
+  --bs-pagination-padding-y: 0.375rem;
+  --bs-pagination-font-size: 1rem;
+  --bs-pagination-color: #000;
+  --bs-pagination-bg: #fff;
+  --bs-pagination-border-width: 1px;
+  --bs-pagination-border-color: #dee2e6;
+  --bs-pagination-border-radius: 0.375rem;
+  --bs-pagination-hover-color: #dc3545;
+  --bs-pagination-hover-bg: #e9ecef;
+  --bs-pagination-hover-border-color: #dee2e6;
+  --bs-pagination-focus-color: #ff6b62;
+  --bs-pagination-focus-bg: #e9ecef;
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-active-color: #fff;
+  --bs-pagination-active-bg: #ff6b62;
+  --bs-pagination-active-border-color: #0d6efd;
+  --bs-pagination-disabled-color: #6c757d;
+  --bs-pagination-disabled-bg: #fff;
+  --bs-pagination-disabled-border-color: #dee2e6;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* all payments */
+
+.all_pay_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.pay_con {
+  background-color: #5852af;
+}
+.adm_sp {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+.pay_bell {
+  color: #fff;
+}
+.pay_search {
+  color: #ff6b62;
+}
+
+.adm {
+  background-color: #ff6b62;
+  padding: 0.3rem;
+  color: #ffff;
+}
+
+.adm_des {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.pay_fltr_btn {
+  background-color: #ff6b62;
+  padding: 0.3rem 0.6rem;
+  color: #fff;
+  border: 1px solid #ff6b62;
+  border-radius: 5px;
+}
+
+.pay_top input {
+  padding: 0.6rem;
+  border: none;
+  box-shadow: 2px 2px 6px #e4dbdb;
+}
+
+.acc_col {
+  color: #ff6b62;
+}
+
+.payment_table th {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.payment_table td {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: black;
+}
+.payment_table tbody tr:nth-child(odd) {
+  background: #ffd4d2;
+}
+
+td.pay_st {
+  background-color: #ff6b62;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+td.pay_type {
+  background-color: #5852af;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+td.pay_acts svg {
+  color: #ff6b62;
+  padding: 0.4px;
+}
+
+/* all payments */
+
+/* units */
+
+.bk_wrp H2 {
+  font-size: 1rem;
+  color: #ff6b62;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.rec_wrp h5,
+.rec_wrp span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.rec_wrp h5 {
+  color: #5852af;
+}
+.rec_wrp span {
+  color: #ff6b62;
+}
+
+.rec_wrp {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.bk_wrp {
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 2px 2px 4px grey;
+  border-radius: 6px;
+}
+
+.unit_head {
+  background: #e1dfff;
+}
+
+.unitrev_wrp {
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 3px 3px 5px grey;
+  border-radius: 10px;
+}
+
+h2.unit_title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ff6b62;
+  padding: 1rem 0;
+}
+
+input#unRange {
+  padding: 0.2rem 2rem;
+  border: none;
+  box-shadow: 1px 1px 3px grey;
+  margin: 0.4rem 0;
+  width: 95%;
+}
+
+a.xl_btn {
+  text-decoration: none;
+  background: #ff6b62;
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #ff6b62;
+}
+
+.unit_table td {
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.unchrt_wrp {
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 2px 2px 4px grey;
+  border-radius: 6px;
+}
+/* units */
+
+.footer_text {
+  color: #5852af;
+}
+.footer_text strong {
+  color: #ee4037;
+}
+.forgot_psw {
+  text-decoration: none;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.login_btn {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  background-color: #5852af;
+  text-align: center;
+  border: 1px solid #5852af;
+  border-radius: 12px;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.login_btn:hover {
+  background-color: #ee4037;
+  cursor: pointer;
+}
+
+.logIn_sec {
+  min-height: 100vh;
+  padding: 5rem 0 3rem 0;
+  background-image: url("./images/loginbg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+}
+form.login_form input {
+  background: #ff958f;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}
+form.login_form label {
+  color: #fff;
+  padding-left: 0.3rem;
+}
+.login_form_wrp {
+  position: relative;
+  box-shadow: 5px 5px 12px black;
+}
+
+img.img-fluid.rounded-circle {
+  filter: drop-shadow(3px 3px 12px black);
+  max-width: 133px;
+  position: absolute;
+  top: 0;
+  left: auto;
+  transform: translate(-50%, -55%);
+  margin-bottom: 3rem;
+}
+
+.login_form_wrp h3,
+.login_form_wrp p {
+  color: #fff;
+}
+.login_form_wrp h3 {
+  padding-top: 3.3rem;
+  font-size: 1.7rem;
+}
+.login_form_wrp p {
+  font-size: 1rem;
+}
+
+.login_form_wrp {
+  padding: 3rem;
+  background: #ff6b62;
+  border-radius: 22px;
+  margin: 2rem 0;
+}
+
+.theme {
+  color: #262161;
+  font-size: 1.1rem;
+}
+
+.accent {
+  color: #ee4036;
+  font-size: 1rem;
+}
+
+.chartName {
+  font-size: 0.8rem;
+}
+
+.logoDiv {
+  max-width: 25%;
+  width: 100%;
+}
+
+/* .sidebar {
+  min-height: 100vh;
+} */
+
+@media screen and (max-width: 991px) {
+  .targetRow {
+    height: unset;
+  }
+  #myHeader .nav-item {
+    padding: unset;
+  }
+  .db3 {
+    padding: 0.3rem 0.6rem;
+    margin-left: 0;
+    margin-left: 0;
+  }
+  /* .btns_div {
+    flex-direction: column;
+  } */
+  .label_div p {
+    font-size: 0.7rem;
+  }
+  .leeds_head {
+    text-align: center;
+  }
+  .leeds_head ul li {
+    margin: 0.5rem 0;
+  }
+  .unit_table td {
+    font-size: 0.5rem;
+  }
+
+  .bk_wrp H2 {
+    font-size: 0.8rem;
+  }
+
+  .pay_con row {
+    text-align: center;
+  }
+
+  .all_pay_title {
+    margin: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .unitrev_wrp {
+    margin: 1rem 0;
+  }
+
+  .btns_div a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    margin: 0 0.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btns_div {
+    flex-direction: column;
+  }
+}
